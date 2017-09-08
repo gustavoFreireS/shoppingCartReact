@@ -8,6 +8,6 @@ A boilerplate to made react developer's life easier in conforms with google insi
     * code minifier
     * font loader
 # To do:
-  * Add global command to make my life easier link to follow: https://bretkikehara.wordpress.com/2013/05/02/nodejs-creating-your-first-global-module/
+  * Add global command to make my life easier. link to follow: https://bretkikehara.wordpress.com/2013/05/02/nodejs-creating-your-first-global-module/
   * Add useful functions on package.json
 
