@@ -6,6 +6,7 @@ import Navbar from './Navbar.js'
 import Product from './Product.js'
 import Store from '../store';
 import CartState from '../reducers/';
+import Cart from './Cart.js'
 import {Provider} from 'react-redux';
 import { createStore } from 'redux';
 import {connect} from 'react-redux';
@@ -29,6 +30,7 @@ class Index extends Component {
           <Route exact path='/' component={SearchProducts}/>
           <Route path='/all/' component={AllProducts}/>
           <Route path='/product/*' component={Product}/>
+          <Route path='/cart/' component={Cart}/>
           <Route exact path='/product/:name' render={(props) => (<Product  />)} />
         </Switch>
 

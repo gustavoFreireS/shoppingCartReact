@@ -1,0 +1,55 @@
+.background{
+  background-image: url('../images/background.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 25vh;
+  @media only screen and (max-width: 500px) {
+    padding-top: 5vh;
+  }
+  h1{
+    color: white;
+    text-align: center;
+    font-family: 'Helvetica Neue';
+    font-weight: lighter;
+    font-size: 75px;
+    text-shadow: 2px 2px 2px #555;
+    margin-bottom: 20px;
+  }
+  h2{
+    margin-bottom: 50px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: 'Helvetica';
+  }
+}
+.searchBar{
+  display: flex;
+  flex-grow: 100;
+  width: 80%;
+  margin: 0 auto;
+  @media only screen and (max-width: 500px) {
+    flex-direction: column;
+  }
+  input[type=text]{
+    flex-grow: 90;
+    padding: 10px;
+    border: 0;
+    font-size: 15px;
+    &:focus {
+      outline: #c32d2d auto 5px;
+    }
+    @media only screen and (max-width: 500px) {
+      flex-grow: 100;
+    }
+  }
+  button{
+    flex-grow: 10;
+    @media only screen and (max-width: 500px) {
+      flex-grow: 100;
+    }
+  }
+
+}

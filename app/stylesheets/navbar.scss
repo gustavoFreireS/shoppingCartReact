@@ -1,0 +1,58 @@
+.white-navbar{
+  padding-top: 20px;
+  padding-bottom: 25px;
+  background-color: #f6f6f6;
+  @media only screen and (max-width: 500px) {
+    padding-bottom: 20px;
+  }
+  .link{
+    padding: 25px;
+    font-family: 'Helvetica';
+    @media only screen and (max-width: 500px) {
+      display: none;
+    }
+  }
+}
+.cart{
+  float: right;
+}
+.active{
+  background-color: #c32d2d;
+  color: #fff !important;
+}
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+.hamburger{
+  @media only screen and (min-width: 500px) {
+    display: none;
+  }
+}
+.sideBar{
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100vh;
+  background-color: #f6f6f6;
+  transition: left 0.5s ease-in-out;
+  @media only screen and (min-width: 500px) {
+    display: none;
+  }
+}
+.sidelink{
+  padding: 25px;
+  font-family: 'Helvetica';
+  display: block;
+}
+.ball{
+  background-color: red;
+  padding: 7px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 50%;
+  color: #fff;
+  position: relative;
+  top: -25px;
+  left: -10px
+}
