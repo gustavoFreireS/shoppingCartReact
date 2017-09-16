@@ -1,4 +1,4 @@
-# EmeraldSword
+# React Boilerplate Project
 A boilerplate to made react developer's life easier in conforms with google insights
 # Features:
  * Pre configured react enviroment with router, redux, eslint code verification and more
