@@ -25,8 +25,9 @@ class Index extends Component {
       <Provider store={StoreInstance}>
       <div>
 
-      <Navbar/>
+<Navbar/>
       <Switch>
+
           <Route exact path='/' component={SearchProducts}/>
           <Route path='/all/' component={AllProducts}/>
           <Route path='/product/*' component={Product}/>
