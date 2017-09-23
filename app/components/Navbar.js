@@ -8,8 +8,9 @@ class Navbar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      clicked: false,
-      showSide: "-600px"
+      clicked: window.location.href.indexOf('all') !== -1 ? true : false,
+      showSide: "-600px",
+      isClicked: false
     }
     this.addClick = this.addClick.bind(this);
     this.showNav = this.showNav.bind(this);
@@ -21,7 +22,8 @@ class Navbar extends Component {
   }
   showNav(){
     this.setState({
-      showSide: this.state.showSide == "-600px" ? "0px" : "-600px"
+      showSide: this.state.showSide == "-600px" ? "0px" : "-600px",
+      isClicked: !this.state.isClicked
     });
   }
   render() {
@@ -35,10 +37,13 @@ class Navbar extends Component {
       <Link className='cart' style={{cursor:'pointer'}} to='/cart'> <img src={Cart} height='30px'></img> <span className='ball'>{this.props.cartState.cart ? this.props.cartState.cart.length : 0}</span></Link>
     </div>
   </nav>
+  { this.state.isClicked ? (
   <div className='sideBar' style={{left: this.state.showSide}}>
     <Link onClick={() => this.addClick(false)} className={'sidelink '+ (!this.state.clicked ? 'active' : '') } to='/'>Home</Link>
-    <Link onClick={() => this.addClick(true)} className={'sidelink '+ (this.state.clicked ? 'active' : '') } to='/all'>All Productss</Link>
+    <Link onClick={() => this.addClick(true)} className={'sidelink '+ (this.state.clicked ? 'active' : '') } to='/all'>All Products</Link>
   </div>
+) : ('')
+}
 </div>
     );
   }

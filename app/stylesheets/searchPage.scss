@@ -1,11 +1,12 @@
 .background{
   background-image: url('../images/background.jpg');
-  height: 100vh;
+  height: 70vh;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 25vh;
+  padding-top: 30vh;
   @media only screen and (max-width: 500px) {
-    padding-top: 5vh;
+    padding-top: 15vh;
+    height: 85vh;
   }
   h1{
     color: white;

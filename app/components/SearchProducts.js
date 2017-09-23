@@ -11,8 +11,8 @@ class SearchProducts extends Component {
   render() {
     return (
       <div className='background'>
-      <h1>Ezreal Boioler's Market</h1>
-      <h2> The place from where the best products belongs (not in a museum) </h2>
+      <h1>React Test Fruit Market</h1>
+      <h2> A test using redux, and react router</h2>
       <div className='searchBar'>
       <input type='text' placeholder='Search Products'></input>
       <button className='btn-red'>search</button>

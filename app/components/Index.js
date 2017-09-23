@@ -2,8 +2,7 @@ import React, {Component} from 'react';
 import SearchProducts from "./SearchProducts.js";
 import {HashRouter, Switch, Route, Link} from 'react-router-dom';
 import AllProducts from './AllProducts.js';
-import Navbar from './Navbar.js'
-import Product from './Product.js'
+import Navbar from './Navbar.js';
 import Store from '../store';
 import CartState from '../reducers/';
 import Cart from './Cart.js'
@@ -30,9 +29,7 @@ class Index extends Component {
 
           <Route exact path='/' component={SearchProducts}/>
           <Route path='/all/' component={AllProducts}/>
-          <Route path='/product/*' component={Product}/>
           <Route path='/cart/' component={Cart}/>
-          <Route exact path='/product/:name' render={(props) => (<Product  />)} />
         </Switch>
 
       </div>

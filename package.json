@@ -1,7 +1,7 @@
 {
-  "name": "emerald-sword",
+  "name": "React-Test-Market",
   "version": "0.0.1",
-  "description": "A boilerplate created to make react.js developer's life easier in conforms with google page-speed",
+  "description": "A test project using react-redux, react router and more",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

@@ -10,3 +10,9 @@ export const removeAll = () => {
       type: 'remove',
   };
 }
+export const deleteThis = (item) => {
+  return {
+      type: 'delete',
+      item
+  };
+}
