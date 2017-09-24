@@ -6,7 +6,7 @@
   padding-top: 30vh;
   @media only screen and (max-width: 500px) {
     padding-top: 15vh;
-    height: 85vh;
+    height: 100vh;
   }
 
   h1 {
@@ -38,6 +38,7 @@
   }
 
   input[type=text] {
+    font-family: 'Helvetica Neue';
     flex-grow: 100;
     padding: 10px;
     border: 0;
@@ -53,10 +54,10 @@
     }
   }
 
-  button {
+  a{
     margin: 0;
     flex-grow: 10;
-    max-height: 38px;
+    max-height: 17px;
     @media only screen and (max-width: 500px) {
       flex-grow: 100;
     }
@@ -67,19 +68,29 @@
   background-color: #dfdfdf;
 
   @media only screen and (max-width: 500px) {
-    top: 79.5vh;
+    margin-top: 37px;
+    flex-direction: column;
+    position: absolute;
+    width: 80%;
   }
 }
 .react-autosuggest__suggestion{
   cursor: pointer;
+  border-bottom: 1px solid #f6f6f6;
+  padding: 20px;
+  &:last-child{
+    border: 0;
+  }
 }
 .react-autosuggest__container{
+  font-family: 'Helvetica Neue';
   display: flex;
   flex-direction: column;
   flex-grow: 90;
+  padding: 0px;
 
 }
 .react-autosuggest__suggestions-list{
   list-style-type: none;
-  padding-left: 5px;
+  padding: 0px;
 }

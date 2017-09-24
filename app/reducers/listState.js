@@ -4,6 +4,7 @@ import Watermelon from '../images/watermelon.png';
 import Banana from '../images/banana.png';
 import Lemon from '../images/lemon.png';
 import Grapes from '../images/grape.png';
+import Avocado from '../images/avocado.png';
 export default(state = [], payload) => {
     switch (payload.type) {
         default:
@@ -11,6 +12,11 @@ export default(state = [], payload) => {
           {
             name: 'Apple',
             image: Apple
+          },
+          {
+            name: 'Avocado',
+            image: Avocado
+
           },
           {
             name: 'Orange',

@@ -5,8 +5,10 @@ body {
 .btn-red {
   background-color: #c32d2d;
   border: 0;
-  color: #fff;
-  font-size: 15px;
+  text-align: center;
+  color: #fff !important;
+  font-size: 15px !important;
+  font-family: 'Helvetica';
   padding: 10px;
   cursor: pointer;
 }

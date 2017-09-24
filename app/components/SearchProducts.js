@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import Background from '../images/background.jpeg';
 import Autosuggest from 'react-autosuggest';
+import {Link} from 'react-router-dom';
 require('../stylesheets/searchPage.scss');
 require('../stylesheets/style.scss');
 
@@ -74,7 +75,7 @@ class SearchProducts extends Component {
          renderSuggestion={renderSuggestion}
          inputProps={inputProps}
        />
-      <button className='btn-red'>search</button>
+      <Link className='btn-red' to={'/product/' + value}>search</Link>
     </div>
     </div>
     );
