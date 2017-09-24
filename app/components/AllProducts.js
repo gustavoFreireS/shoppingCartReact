@@ -8,24 +8,21 @@ class AllProducts extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {
-    };
-    }
+    this.state = {};
+  }
   render() {
     return (
       <div className='container'>
-      <h1 className='header-products'>All Products</h1>
-      <div className='productsContainer'>
-        {this.props.listState.map((item) =>
-          <div className='product'>
+        <h1 className='header-products'>All Products</h1>
+        <div className='productsContainer'>
+          {this.props.listState.map((item) => <div className='product'>
             <div className='product-img'>
-              <img alt={item.name + ' image'} src={item.image}height='200px'></img>
+              <img height='200px' alt={item.name + ' image'} src={item.image}></img>
             </div>
             <p className='item-name'>{item.name}</p>
             <button className='btn-red' onClick={() => this.props.actions.addToCart(item)}>Add to cart</button>
+          </div>)}
         </div>
-        )}
-      </div>
 
       </div>
     );
@@ -33,9 +30,7 @@ class AllProducts extends Component {
 }
 
 function mapStateToProps(state, props) {
-  return {cartState: state.cartState,
-          listState: state.listState
-        };
+  return {cartState: state.cartState, listState: state.listState};
 }
 
 function mapDispatchToProps(dispatch) {

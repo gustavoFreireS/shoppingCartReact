@@ -11,20 +11,20 @@ class Cart extends Component {
     return (
       <div className='container'>
         <h1 className='header-products'>Buy Cart</h1>
-      <div className='productsContainer'>
-        {this.props.cartState.cart.map((item) =>
-          <div className='product'>
-            <div className='product-img'>
-              <img src={item.image}height='200px'></img>
-            </div>
-            <p className='item-name'>{item.name}</p>
-            <button  className='btn-red' onClick={() => this.props.actions.deleteThis(item)} >Remove this</button>
+        <div className='productsContainer'>
+          {this.props.cartState.cart
+            ? (this.props.cartState.cart.map((item) => <div className='product'>
+              <div className='product-img'>
+                <img height='200px' src={item.image}></img>
+              </div>
+              <p className='item-name'>{item.name}</p>
+              <button className='btn-red' onClick={() => this.props.actions.deleteThis(item)}>Remove this</button>
+            </div>))
+            : ''
+}
         </div>
-
-        )}
+        <button className='btn-black' onClick={() => this.props.actions.removeAll()}>Remove All</button>
       </div>
-      <button className='btn-black' onClick={() => this.props.actions.removeAll()}>Remove All</button>
-    </div>
     );
   }
 }

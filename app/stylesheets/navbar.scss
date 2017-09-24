@@ -2,21 +2,22 @@
   position: fixed; /* Set the navbar to fixed position */
    top: 0; /* Position the navbar at the top of the page */
    width: 100%; /* Full width */
-  padding-top: 25px;
-  padding-bottom: 9px;
   background-color: #f6f6f6;
   @media only screen and (max-width: 500px) {
     padding-bottom: 20px;
   }
-  .link{
-    padding: 25px;
-    font-family: 'Helvetica';
-    @media only screen and (max-width: 500px) {
+}
+.link{
+  display: inline-block;
+  padding: 25px;
+  font-family: 'Helvetica';
+  @media only screen and (max-width: 500px) {
       display: none;
     }
   }
-}
 .cart{
+  display: inline-block;
+  padding-top: 23px;
   float: right;
 }
 .active{
@@ -28,6 +29,8 @@
   margin: 0 auto;
 }
 .hamburger{
+  display: inline-block;
+  padding-top: 25px;
   @media only screen and (min-width: 500px) {
     display: none;
   }
@@ -51,12 +54,17 @@
 }
 .ball{
   background-color: red;
-  padding: 7px;
-  padding-top: 2px;
-  padding-bottom: 2px;
+  padding: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
   border-radius: 50%;
   color: #fff;
   position: relative;
+  font-size: 15px;
+  transition: left 0.5s ease-in-out;
   top: -25px;
-  left: -10px
+  left: -10px;
+  display: inline-block;
+  width: 15px;
+  text-align: center;
 }

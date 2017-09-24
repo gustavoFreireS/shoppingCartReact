@@ -1,4 +1,4 @@
-.background{
+.background {
   background-image: url('../images/background.jpg');
   height: 70vh;
   background-size: cover;
@@ -8,7 +8,8 @@
     padding-top: 15vh;
     height: 85vh;
   }
-  h1{
+
+  h1 {
     color: white;
     text-align: center;
     font-family: 'Helvetica Neue';
@@ -16,7 +17,8 @@
     font-size: 75px;
     margin-bottom: 20px;
   }
-  h2{
+
+  h2 {
     margin-bottom: 50px;
     color: white;
     text-align: center;
@@ -25,31 +27,59 @@
     font-family: 'Helvetica';
   }
 }
-.searchBar{
-  display: flex;
+
+.searchBar {
+  display: flex !important;
   flex-grow: 100;
   width: 80%;
   margin: 0 auto;
   @media only screen and (max-width: 500px) {
     flex-direction: column;
   }
-  input[type=text]{
-    flex-grow: 90;
+
+  input[type=text] {
+    flex-grow: 100;
     padding: 10px;
     border: 0;
+    border-radius: 0;
+    margin: 0;
     font-size: 15px;
+
     &:focus {
-      outline: #c32d2d auto 5px;
+      outline: none;
     }
-    @media only screen and (max-width: 500px) {
-      flex-grow: 100;
-    }
-  }
-  button{
-    flex-grow: 10;
     @media only screen and (max-width: 500px) {
       flex-grow: 100;
     }
   }
 
+  button {
+    margin: 0;
+    flex-grow: 10;
+    max-height: 38px;
+    @media only screen and (max-width: 500px) {
+      flex-grow: 100;
+    }
+  }
+}
+.react-autosuggest__suggestions-container{
+  flex-grow: 100;
+  background-color: #dfdfdf;
+
+  @media only screen and (max-width: 500px) {
+    top: 79.5vh;
+  }
+}
+.react-autosuggest__suggestion{
+  cursor: pointer;
+}
+.react-autosuggest__container{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 90;
+
+}
+.react-autosuggest__suggestions-list{
+  list-style-type: none;
+  padding-left: 5px;
 }
