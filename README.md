@@ -6,3 +6,6 @@ A Simple Example on how to use React Router and Redux (persisting data in the br
  * Data persistance in redux (if you restart the browser (even if you quit it) the state will persist)
 # To do:
   * Add visuals (css) to the project
+### Solar System Exploration, 1950s – 1960s
+
+- [ ] Mercury
