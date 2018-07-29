@@ -5,7 +5,6 @@ A Simple Example on how to use React Router and Redux (persisting data in the br
  * Pre configured react enviroment with router, redux, eslint code verification and more
  * Data persistance in redux (if you restart the browser (even if you quit it) the state will persist)
 # To do:
-  * Add visuals (css) to the project
-### Solar System Exploration, 1950s – 1960s
+  * Update project to use webpack 4
+  * some more features
 
-- [ ] Mercury
